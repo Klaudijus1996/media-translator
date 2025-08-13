@@ -3,6 +3,6 @@
 .vscode
 
 storage/app/*
-storage/app/!.gitignore
+!storage/app/.gitignore
 storage/logs
-storage/logs/!.gitignore
+!storage/logs/.gitignore
