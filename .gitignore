@@ -4,5 +4,5 @@
 
 storage/app/*
 !storage/app/.gitignore
-storage/logs
+storage/logs/*
 !storage/logs/.gitignore
