@@ -21,9 +21,9 @@ from app.utils.logging_config import setup_logging
 
 app = FastAPI(title="Media Translator POF", version="0.1.0")
 
-DATA_DIR = Path(settings.DATA_DIR)
-INPUT_DIR = DATA_DIR / "input"
-OUT_DIR = DATA_DIR / "output"
+STORAGE_DIR = Path(settings.STORAGE_DIR)
+INPUT_DIR = STORAGE_DIR / "input"
+OUT_DIR = STORAGE_DIR / "output"
 for p in (INPUT_DIR, OUT_DIR):
     p.mkdir(parents=True, exist_ok=True)
 

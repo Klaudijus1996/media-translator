@@ -9,6 +9,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./data:/data
+      - ./storage/app:/storage/app
+      - ./storage/logs:/storage/logs
     restart: unless-stopped
     user: "1000:1000" # ensure container runs as webapp user id on host too

@@ -17,8 +17,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app ./app
 
 # Data dir with write perms
-ENV DATA_DIR=/data
-RUN mkdir -p ${DATA_DIR} && chown -R ${USER}:${USER} ${DATA_DIR} /app
+# ENV STORAGE_DIR=/storage
+# RUN mkdir -p ${STORAGE_DIR} && chown -R ${USER}:${USER} ${STORAGE_DIR} /app
 
 ENV PYTHONUNBUFFERED=1 \
     UVICORN_HOST=0.0.0.0 \
