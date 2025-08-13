@@ -1,0 +1,8 @@
+.env
+.idea
+.vscode
+
+storage/app/*
+!storage/app/.gitignore
+storage/logs/*
+!storage/logs/.gitignore
